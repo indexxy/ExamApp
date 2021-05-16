@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestionActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/addQuestion_mainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addQuestion_descriptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Description" />
+
+            <EditText
+                android:id="@+id/addQuestion_descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="50dp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/addQuestion_answerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Answer 1" />
+
+            <EditText
+                android:id="@+id/addQuestion_answerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="5dp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/addQuestion_answerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Answer 2" />
+
+            <EditText
+                android:id="@+id/addQuestion_answerEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="5dp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/addQuestion_answerView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Answer 3 " />
+
+            <EditText
+                android:id="@+id/addQuestion_answerEditText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="5dp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/addQuestion_answerView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="Answer 4" />
+
+            <EditText
+                android:id="@+id/addQuestion_answerEditText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="5dp"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/addQuestion_answerView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Answer 5" />
+
+            <EditText
+                android:id="@+id/addQuestion_answerEditText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="5dp"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addQuestion_correctAnswerView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Choose correct answer" />
+                <Spinner
+                    android:id="@+id/addQuestion_correctSpinner"
+                    android:drawSelectorOnTop="true"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:entries="@array/correct_answer"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/addQuestion_mediaTypeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/media_types"
+                    android:spinnerMode="dropdown"/>
+                <Button
+                    android:id="@+id/addQuestion_chooseFile"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:onClick="onChooseFileClick"
+                    android:text="Choose file" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:id="@+id/addQuestion_audioLayout"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/addQuestion_pause"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:enabled="false"
+                    android:text="Pause" />
+                <Button
+                    android:id="@+id/addQuestion_play"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="Play" />
+                <Button
+                    android:id="@+id/addQuestion_stop"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:enabled="false"
+                    android:text="Stop" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/addQuestion_saveBtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onSaveClick"
+                android:text="@string/save_btn" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

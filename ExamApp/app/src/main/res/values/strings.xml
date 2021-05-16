@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ExamApp</string>
+    <string name="uname_txt_view">Username</string>
+    <string name="pword_txt_view">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="email_txt_view">E-mail</string>
+    <string name="email_hint">example@example.com</string>
+    <string name="pword_hint">**********</string>
+    <string name="pword_confirm">Confirm Password</string>
+    <string name="fname_view">First Name</string>
+    <string name="lname_view">Last Name</string>
+    <string name="phone_num_view">Phone Number</string>
+    <string name="edit_profile_btn">Edit Profile</string>
+    <string name="add_question_btn">Add Question</string>
+    <string name="list_questions_btn">List Questions</string>
+    <string name="create_exam_btn">Create an Exam</string>
+    <string name="exam_settings_btn">Exam settings</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string-array name="media_types">
+        <item>Select media type</item>
+        <item>image</item>
+        <item>video</item>
+        <item>audio</item>
+    </string-array>
+    <string-array name="correct_answer">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

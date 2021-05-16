@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.edu.yildiz.mecdeddinharrad">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:grantUriPermissions="true"
+        android:theme="@style/Theme.ExamApp">
+
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.ExamSettingsActivity"
+            android:label="Exam Settings"/>
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.CreateExamActivity"
+            android:label="Create Exam"/>
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.ListQuestionsActivity"
+            android:label="List Questions"/>
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.AddQuestionActivity"
+            android:label="Add Question"/>
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.EditProfileActivity"
+            android:label="Edit Profile"/>
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.MenuActivity"
+            android:label="Menu" />
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.SignupActivity"
+            android:label="Sign Up" />
+        <activity
+            android:name="tr.edu.yildiz.mecdeddinharrad.LoginActivity"
+            android:label="Exam App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
